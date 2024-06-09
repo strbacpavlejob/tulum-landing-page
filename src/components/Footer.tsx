@@ -4,7 +4,7 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = ["Home", "Hosts", "Guests", "About Us", "FAQs"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="relative">
@@ -19,17 +19,17 @@ export function Footer() {
               >
                 <Image
                   src="/img/logo.svg"
-                  alt="N"
+                  alt="logo"
                   width="32"
                   height="32"
                   className="w-8"
                 />
-                <span>Nextly</span>
+                <span>Tulum</span>
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Nextly is a free landing page & marketing website template for
+              Tulum is a free landing page & marketing website template for
               startups and indie projects. Its built with Next.js & TailwindCSS.
               And its completely open-source.
             </div>

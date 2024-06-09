@@ -40,7 +40,7 @@ const benefitTwo = {
   bullets: [
     {
       title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
+      desc: "Tulum is designed as a mobile first responsive template.",
       icon: <DevicePhoneMobileIcon />,
     },
     {
@@ -50,7 +50,7 @@ const benefitTwo = {
     },
     {
       title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
+      desc: "Tulum comes with a zero-config light & dark mode. ",
       icon: <SunIcon />,
     },
   ],
