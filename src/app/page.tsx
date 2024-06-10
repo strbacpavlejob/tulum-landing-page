@@ -8,18 +8,12 @@ import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 
 import { benefitOne, benefitTwo } from "@/components/data";
+import { Features } from "@/components/Features";
 export default function Home() {
   return (
     <Container>
       <Hero />
-      <SectionTitle
-        preTitle="Tulum Benefits"
-        title=" Why should you use this landing page"
-      >
-        Tulum is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
-      </SectionTitle>
+      <Features />
 
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
