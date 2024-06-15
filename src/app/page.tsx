@@ -9,11 +9,13 @@ import { Cta } from "@/components/Cta";
 
 import { benefitOne, benefitTwo } from "@/components/data";
 import { Features } from "@/components/Features";
+import { Finance } from "@/components/Finance";
 export default function Home() {
   return (
     <Container>
       <Hero />
       <Features />
+      <Finance />
 
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />

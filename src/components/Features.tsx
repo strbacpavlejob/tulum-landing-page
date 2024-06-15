@@ -4,18 +4,16 @@ import heroImg from "../../public/img/hero.png";
 import { SectionTitle } from "./SectionTitle";
 
 export const MiniSectionTitle = (props: any) => {
+  const alignment = props.bulletPoint % 2 ? "right" : "left";
+  const alignmentClasses =
+    alignment === "right" ? "items-end text-right" : "items-start text-left";
+
   return (
-    <div className="flex flex-col items-center">
+    <div className={`flex flex-col ${alignmentClasses}`}>
       <button className="w-12 h-12 mt-3 text-center text-white bg-indigo-600 rounded-xl hover:bg-indigo-500">
         {props.bulletPoint}
       </button>
-      <Container
-        className={`flex w-full flex-col mt-1 ${
-          props.align === "left"
-            ? ""
-            : "items-center justify-center text-center"
-        }`}
-      >
+      <Container className={`flex w-full flex-col mt-1 ${alignmentClasses}`}>
         {props.title && (
           <h2 className="max-w-2xl mt-3 text-md font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight dark:text-white">
             {props.title}
@@ -37,28 +35,33 @@ export const Features = () => {
     {
       bulletIndex: 1,
       title: "Map",
-      description: "Find parties in your area",
+      description:
+        "Explore and find parties happening around you with our interactive map.",
     },
     {
       bulletIndex: 2,
       title: "Tickets",
-      description: "Keep track of all your purchased tickets",
+      description:
+        "Easily manage and keep track of all your purchased tickets in one place.",
     },
     {
       bulletIndex: 3,
       title: "Hosting",
-      description: "Organize your party through a simple interface",
+      description:
+        "Plan and organize your own parties with our user-friendly hosting interface.",
     },
     {
       bulletIndex: 4,
       title: "Account",
-      description: "Create your unique experience with Tulum",
+      description:
+        "Customize your unique party experience with your personal Tulum account.",
     },
   ];
   return (
     <>
       <SectionTitle title="How Tulum Works">
-        You can find nearby parties that match your type.
+        Discover How Tulum Transforms Your Party Experience Tulum makes finding
+        and hosting parties easy and fun. Here’s how:
       </SectionTitle>
 
       <Container className="flex flex-wrap justify-center">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
-import heroImg from "../../public/img/hero.png";
+import Smartphone from "./Smartphone";
 
 export const Hero = () => {
   return (
@@ -9,11 +9,13 @@ export const Hero = () => {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Download app, Start your party, Earn the money!
+              Download Tulum, Start Your Party, Earn Money!
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Download Tulum app, create account and find parties across your
-              city. Host your own party and earn more money.
+              Get the Tulum app, create your account, and discover exciting
+              parties in your city. Host your own events and make money
+              effortlessly. Join the Tulum community today and turn every night
+              into an unforgettable experience!
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
@@ -34,7 +36,8 @@ export const Hero = () => {
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="flex items-right">
-            <Image
+            <Smartphone videoSrc="https://videos.pexels.com/video-files/6115066/6115066-hd_1080_2048_25fps.mp4" />
+            {/* <Image
               src={heroImg}
               width="350"
               height="350"
@@ -42,7 +45,7 @@ export const Hero = () => {
               alt="Hero Illustration"
               loading="eager"
               placeholder="blur"
-            />
+            /> */}
           </div>
         </div>
       </Container>
