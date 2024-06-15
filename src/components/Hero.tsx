@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import Smartphone from "./Smartphone";
+import mapImg from "../../public/img/screenshots/map.png";
 
 export const Hero = () => {
   return (
@@ -36,9 +37,9 @@ export const Hero = () => {
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="flex items-right">
-            <Smartphone videoSrc="https://videos.pexels.com/video-files/6115066/6115066-hd_1080_2048_25fps.mp4" />
+            <Smartphone />
             {/* <Image
-              src={heroImg}
+              src={mapImg}
               width="350"
               height="350"
               // className={"object-cover"}

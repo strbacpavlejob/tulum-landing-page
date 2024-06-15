@@ -65,7 +65,7 @@ export const Features = () => {
       </SectionTitle>
 
       <Container className="flex flex-wrap justify-center">
-        <div className="flex w-full justify-center lg:w-1/2 gap-16">
+        <div className="flex w-full justify-center lg:w-2/3 gap-16">
           {/* Left Column for buttons 1 and 3 */}
           <div className="flex flex-col items-center justify-between h-full py-10">
             {bulletPoints
