@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import Smartphone from "./Smartphone";
-import mapImg from "../../public/img/screenshots/map.png";
+import exampleImg from "../../public/img/screenshots/example.png";
 
 export const Hero = () => {
   return (
@@ -37,7 +37,7 @@ export const Hero = () => {
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="flex items-right">
-            <Smartphone />
+            <Smartphone src={exampleImg.src} />
             {/* <Image
               src={mapImg}
               width="350"

@@ -1,57 +1,57 @@
 import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
+  MagnifyingGlassCircleIcon,
+  UserGroupIcon,
+  ShareIcon,
+  CurrencyDollarIcon,
+  StarIcon,
+  ChartBarIcon,
 } from "@heroicons/react/24/solid";
 
 import benefitOneImg from "../../public/img/svgs/partyticket.svg";
 import benefitTwoImg from "../../public/img/svgs/host.svg";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Guest Benefits with Tulum",
+  desc: "Experience Parties as a Tulum Guest",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
+      title: "Discover Exciting Parties",
+      desc: "Use the map to find parties that match your interests in your area. Easily purchase and manage your tickets within the app.",
+      icon: <MagnifyingGlassCircleIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
+      title: "Connect with Like-minded People",
+      desc: "Find and interact with other party-goers who share your interests. Check their relationship status and make new friends or connections.",
+      icon: <UserGroupIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
+      title: "Social Media Integration",
+      desc: "Connect your Tulum account with platforms like TikTok. Share your party experiences and grow your social network, making every event memorable.",
+      icon: <ShareIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "Host Benefits with Tulum",
+  desc: "Why Host Parties with Tulum?",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Tulum is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
+      title: "Earn Money with Party Coins",
+      desc: "As a host, earn Party Coins for every ticket sold to your events. Convert these Party Coins into real money, making your hosting efforts profitable.",
+      icon: <CurrencyDollarIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
+      title: "Simple and Efficient Hosting",
+      desc: "Use our intuitive interface to plan and manage your events seamlessly. Track ticket sales, manage guest lists, and ensure a smooth event experience.",
+      icon: <ChartBarIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Tulum comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
+      title: "Build Your Reputation",
+      desc: "Gain ratings and reviews from your guests, helping you build a solid reputation as a top host. The better your events, the more you earn and grow your following.",
+      icon: <StarIcon />,
     },
   ],
 };
