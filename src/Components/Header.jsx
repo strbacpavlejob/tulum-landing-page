@@ -1,5 +1,5 @@
 import Logo from "./Logo.jsx";
-import Button from "./ui/Button.jsx";
+import { RainbowButton } from "./RainbowButton.jsx";
 import { NavigationLabel } from "./ui/NavigationLabel.jsx";
 import WishlistModal from "./ui/WishlistModal.jsx";
 import { useCallback, useState } from "react";
@@ -49,13 +49,12 @@ export default function Header() {
         </ul>
       </menu>
       <div className="w-full flex flex-row box-border justify-end">
-        <Button
-          styleButton="px-8 py-4 text-white font-normal text-xl rounded-[2rem] hover:border-transparent cursor-pointer"
+        <RainbowButton
+          className="px-8 py-4 text-white font-normal text-xl rounded-[2rem] hover:border-transparent cursor-pointer"
           onClick={handleClick}
-          isModal="no"
         >
           Join wishlist
-        </Button>
+        </RainbowButton>
       </div>
       {isModalOpen && (
         <WishlistModal

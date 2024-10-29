@@ -1,6 +1,7 @@
 import rectangle from "../assets/Rectangle.png";
 import googlePlay from "../assets/Google-Play.svg";
 import appStore from "../assets/App-Store.svg";
+import { WordFadeIn } from "./WordFadeIn";
 
 export default function HeroSection() {
   return (
@@ -9,7 +10,10 @@ export default function HeroSection() {
 
       <div className="w-full flex flex-row items-start text-start justify-center gap-16 flex-wrap lg:flex-nowrap">
         <div className="w-2/3 flex flex-col gap-8">
-          <h1 className="">Download Tulum, Start Your Party, Earn Money!</h1>
+          <WordFadeIn
+            words="Download Tulum, Start Your Party, Earn Money!"
+            className="text-left font-normal text-2xl"
+          />
           <p className="">
             Get Tulum app, create your account, and discover exciting parties in
             your city. Host your own events and make money effortlessly. Join
