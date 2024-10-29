@@ -9,8 +9,8 @@ export const BenefitsContent = ({ selectedItem }) => {
     selectedItem === BUTTON_SWITCH_TYPES.GUEST ? GUEST_BENEFITS : HOST_BENEFITS;
 
   return (
-    <div className="h-full flex flex-col gap-10 items-center justify-stretch relative index-40">
-      <div className="flex flex-col ">
+    <div className="h-full flex flex-row gap-10 items-center justify-stretch relative index-40 ">
+      <div className="flex flex-col h-full ">
         {benefitsList.map(({ name, description, icon }) => (
           <LiIcon
             key={icon}
@@ -20,7 +20,7 @@ export const BenefitsContent = ({ selectedItem }) => {
           />
         ))}
       </div>
-      <div className="flex flex-col ">
+      <div className="flex flex-col h-full ">
         <BackgroundSVG selectedItem={selectedItem} />
       </div>
     </div>

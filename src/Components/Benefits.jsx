@@ -60,9 +60,9 @@ export const Benefits = () => {
   // title
 
   return (
-    <section className=" min-h-[500px] w-full mx-8 flex flex-col text-start border-solid border-gray-950	gap-16 flex-wrap lg:flex-nowrap">
+    <section className="min-h-[500px] w-full px-8 flex flex-col text-start border-solid border-gray-950 gap-16 flex-wrap lg:flex-nowrap overflow-hidden">
       <div className="h-5px" id="benefits"></div>
-      <div className="flex flex-col items-center justify-center gap-16 ">
+      <div className="flex flex-col items-center justify-center gap-16">
         <SwitchElement selectedItem={selectedItem} onChange={handleSelect} />
         <BenefitsTitle selectedItem={selectedItem} />
       </div>
