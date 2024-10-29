@@ -27,13 +27,13 @@ export default function Header() {
 
   return (
     <header
-      className="w-full mx-0 sticky top-[2rem] flex flex-row items-center"
+      className="w-full mx-0 sticky top-[2rem] flex flex-row items-center z-50"
       style={{ backgroundColor: "" }}
     >
       <div className="w-full">
         <Logo />
       </div>
-      <menu className="w-full flex-row mx-8">
+      <menu className="w-full justify-center flex-row mx-8">
         <ul
           className="flex flex-row text-2xl gap-8 list-none justify-center"
           style={{ color: "var(--secondary)" }}
