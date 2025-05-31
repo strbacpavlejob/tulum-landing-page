@@ -1,8 +1,12 @@
 import { LiIcon } from "./LiIcon";
-import mockUp from "../assets/smartmockup.png";
+import home from "../assets/home.svg";
 import { SectionTitle } from "./SectionTitle";
+import { Iphone15Pro } from "./ui/Iphone15Pro";
 
 export const Features = () => {
+  const SIZE_MULTIPLIER = 1;
+  const iphoneWidth = 433 * SIZE_MULTIPLIER;
+  const iphoneHeight = 882 * SIZE_MULTIPLIER;
   return (
     <section className="w-full flex flex-col gap-20 items-center justify-center">
       <div className="h-5px" id="features"></div>
@@ -27,9 +31,10 @@ hosting parties easy and fun. Here&#39;s how:"
             description="Easily manage and keep track of all your purchased tickets in one place."
           />
         </div>
-        <div>
+        <Iphone15Pro src={home} width={iphoneWidth} height={iphoneHeight} />
+        {/* <div>
           <img src={mockUp} />
-        </div>
+        </div> */}
         <div className="w-72 m-2 flex flex-col gap-24 items-left">
           <LiIcon
             name="Hosting"

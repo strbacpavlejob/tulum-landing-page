@@ -26,10 +26,7 @@ export default function Header() {
   };
 
   return (
-    <header
-      className="w-full mx-0 sticky top-[2rem] flex flex-row items-center z-50"
-      style={{ backgroundColor: "" }}
-    >
+    <header className="backdrop-blur-md w-full mx-0 sticky top-[0rem] pt-[2rem] flex flex-row items-center z-50">
       <div className="w-full">
         <Logo />
       </div>
@@ -50,7 +47,7 @@ export default function Header() {
       </menu>
       <div className="w-full flex flex-row box-border justify-end">
         <RainbowButton
-          className="px-8 py-4 text-white font-normal text-xl rounded-[2rem] hover:border-transparent cursor-pointer"
+          className="px-8 py-4 text-white font-normal text-xl rounded-[2rem] hover:border-transparent cursor-pointer bg-text-gray"
           onClick={handleClick}
         >
           Join wishlist

@@ -2,6 +2,7 @@ import Logo from "./Logo";
 import { NavigationLabel } from "./ui/NavigationLabel";
 import TermsModal from "./ui/TermsModal";
 import { useState } from "react";
+import blob from "@/assets/blob.svg";
 
 export default function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -119,6 +120,11 @@ export default function Footer() {
         <ion-icon name="heart"></ion-icon>
         <span> by Pavle Strbac</span>
       </div>
+      <img
+        src={blob}
+        alt="blob"
+        className="absolute -bottom-36 -right-28 z-[-20]"
+      />
     </>
   );
 }

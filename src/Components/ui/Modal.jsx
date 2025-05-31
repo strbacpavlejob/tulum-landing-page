@@ -2,10 +2,7 @@ import { forwardRef, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
 import PropTypes from "prop-types";
 
-const Modal = forwardRef(function Modal(
-  { children, title, subtitle, isOpen, onClose },
-  ref
-) {
+const Modal = forwardRef(function Modal({ children, isOpen, onClose }, ref) {
   const dialog = useRef();
 
   useEffect(() => {
@@ -36,11 +33,6 @@ const Modal = forwardRef(function Modal(
       }}
       onClick={handleBackdropClick}
     >
-      <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-normal text-[#363636]">{title}</h2>
-        <h3 className="text-base font-light text-[#363636]">{subtitle}</h3>
-      </div>
-
       {children}
     </dialog>,
     document.getElementById("modal-root")
